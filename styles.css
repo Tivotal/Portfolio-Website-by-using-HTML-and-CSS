@@ -1,0 +1,148 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  background: #1b1b1b;
+  color: #f2f2f2;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  width: 100%;
+  box-shadow: 0 1px 5px #fff1;
+}
+
+.nav .logo {
+  letter-spacing: 1px;
+}
+
+span {
+  color: red;
+}
+
+.nav .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav .links a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.nav .links a:hover {
+  color: red;
+}
+
+.nav .links a::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0;
+  background: red;
+  border-radius: 10px;
+  bottom: -2px;
+  transition: 0.5s;
+}
+
+.nav .links a:hover:before {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+  margin-top: 65px;
+  padding: 0 4rem;
+}
+
+.main img {
+  width: 400px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.main img:hover {
+  transform: scale(1.1);
+}
+
+.main .content h1 {
+  font-size: 50px;
+}
+
+.content h4 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  max-width: 75%;
+  color: #fff8;
+}
+
+.content button {
+  background: red;
+  color: #fff;
+  width: 170px;
+  height: 40px;
+  border: 2px solid red;
+  margin-top: 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.content button:hover {
+  opacity: 0.8;
+}
+
+.content .btn {
+  background: transparent;
+  margin-left: 20px;
+}
+
+.icons {
+  position: absolute;
+  top: 45%;
+  right: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.icons i {
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.icons i:hover {
+  color: red;
+}
